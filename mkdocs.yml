@@ -13,4 +13,4 @@ plugins:
   - section-index
 nav:
   - Overview: index.md
-  - Code Reference: ./
+  - Code Reference: reference/

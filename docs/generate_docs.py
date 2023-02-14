@@ -4,7 +4,7 @@ from setuptools import find_packages
 
 nav = mkdocs_gen_files.Nav()
 package = find_packages()[0]
-DOCS_OUTPUT_DIR = Path().cwd() / 'docs'
+DOCS_OUTPUT_DIR = Path().cwd() / 'docs' / 'reference'
 
 print('RUNNING GEN FILES')
 
