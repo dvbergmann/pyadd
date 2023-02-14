@@ -6,17 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://127.0.0.1:8000/mnt/c/Users/david/GitHub/pyadd/docs/reference/decorators/">
-        <link rel="shortcut icon" href="../../../../../../../../../img/favicon.ico">
+        <link rel="canonical" href="http://127.0.0.1:8000/mnt/c/Users/david/GitHub/pyadd/docs/decorators/">
+        <link rel="shortcut icon" href="../../../../../../../../img/favicon.ico">
         <title>Decorators - PyAdd</title>
-        <link href="../../../../../../../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../../../../../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../../../../../../../css/base.css" rel="stylesheet">
+        <link href="../../../../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-        <link href="../../../../../../../../../assets/_mkdocstrings.css" rel="stylesheet">
+        <link href="../../../../../../../../assets/_mkdocstrings.css" rel="stylesheet">
 
-        <script src="../../../../../../../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../../../../../../../js/bootstrap.min.js" defer></script>
+        <script src="../../../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../../../../../../../..">PyAdd</a>
+                <a class="navbar-brand" href="../../../../../../../..">PyAdd</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -35,20 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="../../../../../../../../.." class="nav-link">Overview</a>
+                                <a href="../../../../../../../.." class="nav-link">Overview</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Code Reference <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../../../../../../../reference/decorators/" class="dropdown-item">decorators</a>
-</li>
-                                    
-<li>
-    <a href="../../../../../../../../../reference/simple/" class="dropdown-item">simple</a>
-</li>
-                                </ul>
+                            <li class="navitem">
+                                <a href="../../../../../../../../reference" class="nav-link">Code Reference</a>
                             </li>
                         </ul>
 
@@ -108,7 +98,7 @@
 
 
 <h2 id="pyadd.decorators.safe_add" class="doc doc-heading">
-<code class="highlight language-python">safe_add(f)</code>
+<code class="highlight language-python"><span class="n">safe_add</span><span class="p">(</span><span class="n">f</span><span class="p">)</span></code>
 
 </h2>
 
@@ -122,23 +112,40 @@ throws an error.</p>
 
       <details class="quote">
         <summary>Source code in <code>pyadd/decorators.py</code></summary>
-        <pre class="highlight"><code class="language-python">def safe_add(f):
-    """
-    Suppresses errors of addition functions by returning a tuple of None, error message if the decorated function
-    throws an error.
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">safe_add</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Suppresses errors of addition functions by returning a tuple of None, error message if the decorated function</span>
+<span class="sd">    throws an error.</span>
 
-    :param f: decorated funciton
-    :return:
-    """
+<span class="sd">    :param f: decorated funciton</span>
+<span class="sd">    :return:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    def wrapper(*args, **kwargs):
-        try:
-            result = f(*args, **kwargs)
-        except Exception as err:
-            return None, f'{err}'
-        return result
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">err</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">return</span> <span class="n">result</span>
 
-    return wrapper()</code></pre>
+    <span class="k">return</span> <span class="n">wrapper</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
       </details>
   </div>
 
@@ -159,10 +166,10 @@ throws an error.</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "../../../../../../../../..",
+            var base_url = "../../../../../../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../../../../../../../../js/base.js" defer></script>
+        <script src="../../../../../../../../js/base.js" defer></script>
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">

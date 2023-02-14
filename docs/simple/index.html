@@ -6,17 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://127.0.0.1:8000/mnt/c/Users/david/GitHub/pyadd/docs/reference/simple/">
-        <link rel="shortcut icon" href="../../../../../../../../../img/favicon.ico">
+        <link rel="canonical" href="http://127.0.0.1:8000/mnt/c/Users/david/GitHub/pyadd/docs/simple/">
+        <link rel="shortcut icon" href="../../../../../../../../img/favicon.ico">
         <title>Simple - PyAdd</title>
-        <link href="../../../../../../../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../../../../../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../../../../../../../css/base.css" rel="stylesheet">
+        <link href="../../../../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-        <link href="../../../../../../../../../assets/_mkdocstrings.css" rel="stylesheet">
+        <link href="../../../../../../../../assets/_mkdocstrings.css" rel="stylesheet">
 
-        <script src="../../../../../../../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../../../../../../../js/bootstrap.min.js" defer></script>
+        <script src="../../../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../../../../../../../..">PyAdd</a>
+                <a class="navbar-brand" href="../../../../../../../..">PyAdd</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -35,20 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="../../../../../../../../.." class="nav-link">Overview</a>
+                                <a href="../../../../../../../.." class="nav-link">Overview</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Code Reference <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../../../../../../../reference/decorators/" class="dropdown-item">decorators</a>
-</li>
-                                    
-<li>
-    <a href="../../../../../../../../../reference/simple/" class="dropdown-item">simple</a>
-</li>
-                                </ul>
+                            <li class="navitem">
+                                <a href="../../../../../../../../reference" class="nav-link">Code Reference</a>
                             </li>
                         </ul>
 
@@ -118,7 +108,7 @@
 
 
 <h2 id="pyadd.simple.add" class="doc doc-heading">
-<code class="highlight language-python">add(a, b)</code>
+<code class="highlight language-python"><span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code>
 
 </h2>
 
@@ -132,15 +122,24 @@
 
       <details class="quote">
         <summary>Source code in <code>pyadd/simple.py</code></summary>
-        <pre class="highlight"><code class="language-python">def add(a: Number, b: Number) -&gt; Number:
-    """
-    returns the addition of two numbers a and b
-    :param a: number to add
-    :param b: number to add
-    :return: the sum of the numbers
-    """
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Number</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    returns the addition of two numbers a and b</span>
+<span class="sd">    :param a: number to add</span>
+<span class="sd">    :param b: number to add</span>
+<span class="sd">    :return: the sum of the numbers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    return a + b</code></pre>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</code></pre></div></td></tr></table></div>
       </details>
   </div>
 
@@ -151,7 +150,7 @@
 
 
 <h2 id="pyadd.simple.add_int" class="doc doc-heading">
-<code class="highlight language-python">add_int(a, b)</code>
+<code class="highlight language-python"><span class="n">add_int</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code>
 
 </h2>
 
@@ -165,15 +164,24 @@
 
       <details class="quote">
         <summary>Source code in <code>pyadd/simple.py</code></summary>
-        <pre class="highlight"><code class="language-python">def add_int(a: int, b: int) -&gt; int:
-    """
-    returns the addition of two integers a and b
-    :param a: integer to add
-    :param b: integer to add
-    :return: the sum of the integers
-    """
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_int</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    returns the addition of two integers a and b</span>
+<span class="sd">    :param a: integer to add</span>
+<span class="sd">    :param b: integer to add</span>
+<span class="sd">    :return: the sum of the integers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    return a + b</code></pre>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</code></pre></div></td></tr></table></div>
       </details>
   </div>
 
@@ -184,7 +192,7 @@
 
 
 <h2 id="pyadd.simple.multiple_add" class="doc doc-heading">
-<code class="highlight language-python">multiple_add(*nums)</code>
+<code class="highlight language-python"><span class="n">multiple_add</span><span class="p">(</span><span class="o">*</span><span class="n">nums</span><span class="p">)</span></code>
 
 </h2>
 
@@ -197,15 +205,24 @@
 
       <details class="quote">
         <summary>Source code in <code>pyadd/simple.py</code></summary>
-        <pre class="highlight"><code class="language-python">def multiple_add(*nums) -&gt; Number:
-    """
-    Returns the sum of the given numbers
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">multiple_add</span><span class="p">(</span><span class="o">*</span><span class="n">nums</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Number</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the sum of the given numbers</span>
 
-    :param nums: multiple numbers
-    :return: the sum of nums
-    """
+<span class="sd">    :param nums: multiple numbers</span>
+<span class="sd">    :return: the sum of nums</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    return sum(nums)</code></pre>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
       </details>
   </div>
 
@@ -226,10 +243,10 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "../../../../../../../../..",
+            var base_url = "../../../../../../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../../../../../../../../js/base.js" defer></script>
+        <script src="../../../../../../../../js/base.js" defer></script>
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
